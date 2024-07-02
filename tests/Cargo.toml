@@ -1,0 +1,28 @@
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2021"
+publish = false
+[dependencies]
+testcontainers = { version = "0.18.0" , features = ["default"] }
+testcontainers-modules = { version = "0.6.1", features = ["clickhouse", "postgres"]}
+sqlx = { version = "0.7.4", features = ["postgres", "runtime-tokio"] }
+tokio = { version = "1.38.0" , features = ["full"]}
+tokio-postgres = { version = "0.7.10" }
+
+[dev-dependencies]
+lib-b = { path = "../lib-b" }
+lib-a = { path = "../lib-a" }
+
+[[test]]
+name = "beginner_tests"
+path = "beginner_tests.rs"
+
+[[test]]
+name = "beginner_tests_2"
+path = "beginner_tests_02.rs"
+
+[[test]]
+name = "testcontainers"
+path = "test_containers_01.rs"
+

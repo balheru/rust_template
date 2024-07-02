@@ -1,0 +1,12 @@
+[lib]
+path = "lib.rs"
+
+[package]
+name = "lib-a"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+statig = { version = "0.3.0",features = ["serde"]}
+serde = { version = "1.0.203", features = ["serde_derive"]}
+serde_json = "1.0.118"

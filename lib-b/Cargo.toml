@@ -1,0 +1,7 @@
+[lib]
+path = "lib.rs"
+
+[package]
+name = "lib-b"
+version = "0.1.0"
+edition = "2018"

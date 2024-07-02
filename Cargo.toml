@@ -1,0 +1,19 @@
+[package]
+name = "the-binary"
+version = "0.1.0"
+edition = "2018"
+
+[workspace]
+members = [
+    "lib-a",
+    "lib-b",
+    "tests"
+]
+[dependencies]
+lib-a= { path = "lib-a" }
+lib-b= { path = "lib-b" }
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros"] }
+serde = { version = "1.0.203", features = ["derive"] }
+axum = "0.7.5"
+tracing-subscriber = "0.3.18"
+serde_json = "1.0.118"
