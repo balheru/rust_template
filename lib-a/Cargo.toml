@@ -4,7 +4,7 @@ path = "lib.rs"
 [package]
 name = "lib-a"
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
 
 [dependencies]
 statig = { version = "0.3.0",features = ["serde"]}
